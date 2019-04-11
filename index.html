@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="assets\js\jquery-3.3.1.min.js"></script>
+  <title>Partie3 Exercice2 jQuery</title>
+</head>
+
+<body>
+
+  <input type="number" name="counter" value="0" />
+  <button type="button" name="button" id="button1">-</button>
+  <button type="button" name="button" id="button2">+</button>
+
+  <script type="text/javascript">
+    $('#button2').click(function() {
+      var counter = $('input').attr('value');
+      $('input').attr('value', ++counter);
+    });
+    $('#button1').click(function() {
+      var counter = $('input').attr('value');
+      $('input').attr('value', --counter);
+    });
+  </script>
+</body>
+
+</html>
